@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mapa de Postos PRIME</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Google Analytics 
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+  -->
+
+</head>
+<body>
+
+  <div id="app">
+
+    <!-- SIDEBAR -->
+    <div id="sidebar">
+      <div id="sidebar-header">
+        <div id="header-title">
+          <span id="header-dot"></span>
+          Mapa de Postos - PRIME
+        </div>
+        <div id="header-sub">Postos credenciados para abastecimento utilizando o cartão PRIME da Polícia Civil de Minas Gerais</div>
+      </div>
+
+      <div id="search-wrap">
+        <svg id="search-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        <input id="search-input" type="text" placeholder="Ex: Belo Horizonte, Centro..." autocomplete="off" />
+        <button id="search-clear" title="Limpar">✕</button>
+      </div>
+
+      <div id="nearest-wrap">
+        <div class="section-label">Posto mais próximo</div>
+        <div id="nearest-card">
+          <div id="nearest-loading">Obtendo sua localização...</div>
+        </div>
+      </div>
+
+      <div class="section-label" style="padding: 0 14px; margin-bottom: 6px;">
+        Todos os postos
+        <span id="count-badge"></span>
+      </div>
+      <div id="list"></div>
+    </div>
+
+    <!-- MOBILE TOGGLE -->
+    <button id="mobile-toggle" aria-label="Abrir lista de postos">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/></svg>
+      Lista de postos
+    </button>
+
+    <!-- MAP -->
+    <div id="map"></div>
+
+    <!-- BOTÃO INFO -->
+<button id="info-btn" aria-label="Informações sobre a ferramenta">ⓘ</button>
+
+<!-- MODAL INFO -->
+<div id="info-overlay" class="hidden"></div>
+<div id="info-modal" class="hidden">
+  <button id="info-close" aria-label="Fechar">✕</button>
+  <div id="info-modal-title">⚠️ Ferramenta não oficial</div>
+  <p>
+    Desenvolvida por <strong>Pedro Vaz</strong> — Investigador de Polícia —
+    para facilitar o abastecimento de viaturas da <strong>Polícia Civil de Minas Gerais</strong>
+    utilizando o cartão PRIME.
+  </p>
+  <p>Esta ferramenta não possui vínculo oficial com a PCMG ou com a bandeira PRIME.</p>
+  <a href="mailto:pedro.vaz@policiacivil.mg.gov.br" id="info-email">
+    pedro.vaz@policiacivil.mg.gov.br
+  </a>
+</div>
+
+  <!-- DETAIL PANEL -->
+  <div id="detail-panel" class="hidden">
+    <button id="detail-close" aria-label="Fechar">✕</button>
+    <div id="detail-name"></div>
+    <div id="detail-fields"></div>
+    <a id="detail-route" target="_blank" rel="noopener noreferrer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="15" height="15"><polygon points="3 11 22 2 13 21 11 13 3 11"/></svg>
+      Ver rota no Google Maps
+    </a>
+  </div>
+
+  <!-- MOBILE DRAWER OVERLAY -->
+  <div id="drawer-overlay"></div>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
