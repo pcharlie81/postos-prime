@@ -415,6 +415,24 @@ html, body { height: 100%; overflow: hidden; font-family: 'Segoe UI', system-ui,
   margin-bottom: 8px;
 }
 #info-modal strong { color: #1a1a1a; }
+#pix-support {
+  border-top: 1px solid #e5e7eb;
+  margin-top: 12px;
+  padding-top: 10px;
+}
+#pix-support-title {
+  color: #1a1a1a;
+  font-size: 12px;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+#pix-support-key {
+  color: #4b5563;
+  font-family: Consolas, 'Courier New', monospace;
+  font-size: 11px;
+  line-height: 1.45;
+  overflow-wrap: anywhere;
+}
 
 .hidden { display: none !important; }
 

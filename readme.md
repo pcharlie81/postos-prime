@@ -41,3 +41,7 @@ postos-prime/
 ## ⚠️ Aviso
 
 Esta é uma ferramenta **independente** para facilitar a localização de postos credenciados. Não possui vínculo oficial com o cartão ou com a bandeira PRIME.
+
+## Apoie o projeto
+
+Pix: `23e6bc46-d00b-4ce3-89f3-f92f21fb041a`
