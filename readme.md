@@ -40,6 +40,6 @@ postos-prime/
 
 ## ⚠️ Aviso
 
-Esta é uma ferramenta **não oficial**, desenvolvida por **Pedro Vaz** — Investigador de Polícia — para facilitar o abastecimento de viaturas da Polícia Civil de Minas Gerais. Não possui vínculo oficial com a bandeira PRIME.
+Esta é uma ferramenta **não oficial**, desenvolvida por **Pedro Vaz** — Investigador de Polícia — para facilitar o abastecimento de viaturas da Polícia Civil de Minas Gerais. Não possui vínculo oficial com a bandeira PRIME e nem com a PCMG.
 
 📧 Contato: [pedro.vaz@policiacivil.mg.gov.br](mailto:pedro.vaz@policiacivil.mg.gov.br)
