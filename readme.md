@@ -1,6 +1,6 @@
 # 🗺️ Mapa de Postos PRIME
 
-Ferramenta web para localização de postos de combustível credenciados ao **cartão PRIME** de abastecimento das viaturas da **Polícia Civil de Minas Gerais**.
+Ferramenta web para localização de postos de combustível credenciados ao **cartão PRIME**.
 
 ---
 
@@ -40,6 +40,4 @@ postos-prime/
 
 ## ⚠️ Aviso
 
-Esta é uma ferramenta **não oficial**, desenvolvida por **Pedro Vaz** — Investigador de Polícia — para facilitar o abastecimento de viaturas da Polícia Civil de Minas Gerais. Não possui vínculo oficial com a bandeira PRIME e nem com a PCMG.
-
-📧 Contato: [pedro.vaz@policiacivil.mg.gov.br](mailto:pedro.vaz@policiacivil.mg.gov.br)
+Esta é uma ferramenta **independente** para facilitar a localização de postos credenciados. Não possui vínculo oficial com o cartão ou com a bandeira PRIME.

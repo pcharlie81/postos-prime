@@ -415,15 +415,6 @@ html, body { height: 100%; overflow: hidden; font-family: 'Segoe UI', system-ui,
   margin-bottom: 8px;
 }
 #info-modal strong { color: #1a1a1a; }
-#info-email {
-  display: block;
-  font-size: 12px;
-  color: #1565C0;
-  text-decoration: none;
-  margin-top: 10px;
-  font-weight: 500;
-}
-#info-email:hover { text-decoration: underline; }
 
 .hidden { display: none !important; }
 
